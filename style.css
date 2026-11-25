@@ -1,0 +1,446 @@
+
+/* 1. General page settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0B1120;
+    color: #E2E8F0;
+    line-height: 1.6;
+}
+
+/* 2. Header and navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #111827;
+}
+
+header h2 {
+    color: #60A5FA;
+    font-size: 26px;
+}
+
+nav a {
+    color: #E2E8F0;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #60A5FA;
+}
+
+/* 3. Main sections */
+section {
+    padding: 90px 8%;
+}
+
+/* 4. Home section */
+#home {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home h1 {
+    font-size: 48px;
+    max-width: 750px;
+    color: #FFFFFF;
+    margin: 15px 0;
+}
+
+#home p {
+    max-width: 650px;
+    margin-bottom: 15px;
+}
+
+#home a {
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #2563EB;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 15px 10px 0 0;
+}
+
+#home a:hover {
+    background-color: #1D4ED8;
+}
+
+/* 5. Section headings */
+section h2 {
+    color: #60A5FA;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* 6. Skills list */
+#skills ul {
+    padding-left: 25px;
+}
+
+#skills li {
+    margin-bottom: 10px;
+}
+
+/* 7. Projects */
+#projects h3 {
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+
+#projects p {
+    margin-bottom: 15px;
+}
+
+/* 8. Contact links */
+#contact a {
+    color: #60A5FA;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* 9. Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #111827;
+    color: #94A3B8;
+}
+
+
+/* 10. Professional experience */
+
+.experience-card {
+    background-color: #111827;
+    border: 1px solid #263449;
+    border-left: 4px solid #3B82F6;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.experience-card h3 {
+    color: #FFFFFF;
+    font-size: 21px;
+}
+
+.experience-card h4 {
+    color: #60A5FA;
+    margin-top: 5px;
+}
+
+.experience-card p {
+    color: #94A3B8;
+    margin: 10px 0;
+}
+
+.experience-card ul {
+    padding-left: 22px;
+}
+
+.experience-card li {
+    margin-bottom: 10px;
+    color: #CBD5E1;
+}
+
+
+
+/* 11. Technical skills cards */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #111827;
+    border: 1px solid #263449;
+    padding: 25px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-card h3 {
+    color: #60A5FA;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: #CBD5E1;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #3B82F6;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* 12. Projects section */
+
+.projects-intro {
+    color: #CBD5E1;
+    margin-bottom: 25px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #111827;
+    border: 1px solid #263449;
+    padding: 25px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #3B82F6;
+}
+
+.project-card h3 {
+    color: #60A5FA;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #CBD5E1;
+    margin-bottom: 15px;
+}
+
+.project-card .project-tech {
+    color: #94A3B8;
+    font-size: 14px;
+}
+
+.project-card a {
+    display: inline-block;
+    color: #60A5FA;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.project-card a:hover {
+    color: #FFFFFF;
+}
+
+/* Responsive project layout */
+
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* 13. About section */
+
+.about-content {
+    background-color: #111827;
+    border-left: 4px solid #3B82F6;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 900px;
+}
+
+.about-content p {
+    color: #CBD5E1;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* 14. Responsive website design */
+
+/* Tablets and smaller laptops */
+@media (max-width: 900px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    section {
+        padding: 70px 5%;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    /* Navigation */
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 13px;
+    }
+
+    /* General sections */
+    section {
+        padding: 55px 20px;
+    }
+
+    /* Home section */
+    #home {
+        min-height: 65vh;
+    }
+
+    #home h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    #home p {
+        font-size: 15px;
+    }
+
+    #home a {
+        margin-right: 5px;
+        padding: 11px 15px;
+        font-size: 14px;
+    }
+
+    /* Section headings */
+    section h2 {
+        font-size: 26px;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Experience */
+    .experience-card {
+        padding: 18px;
+    }
+
+    /* About */
+    .about-content {
+        padding: 20px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+        font-size: 13px;
+    }
+
+}
+
+
+
+/* 15. Contact section */
+
+.contact {
+    text-align: center;
+}
+
+.contact-intro {
+    color: #CBD5E1;
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: #111827;
+    border: 1px solid #263449;
+    padding: 25px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: #3B82F6;
+}
+
+.contact-card h3 {
+    color: #60A5FA;
+    margin-bottom: 12px;
+}
+
+.contact-card a {
+    color: #CBD5E1;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-card a:hover {
+    color: #60A5FA;
+    text-decoration: underline;
+}
+
+/* Contact responsive layout */
+
+@media (max-width: 600px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
